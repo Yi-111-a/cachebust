@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cachebust"
+version = "0.1.0"
+description = "Find what's busting your LLM prompt cache (DeepSeek, OpenAI, Anthropic, vLLM)."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Yi-111-a"}]
+keywords = ["llm", "prompt-caching", "deepseek", "openai", "anthropic", "ai-agents"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.scripts]
+cachebust = "cachebust.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Yi-111-a/cachebust"
+
+[tool.setuptools]
+packages = ["cachebust"]
